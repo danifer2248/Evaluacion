@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Destino Bolivia: experiencias turisticas premium por los paisajes, cultura y aventura de Bolivia.">
+  <title>Destino Bolivia | Turismo premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand site-nav__brand" href="index.html">Destino Bolivia</a>
+        <button class="navbar-toggler site-nav__toggle" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Abrir navegacion">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse site-nav__menu" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+            <li class="nav-item"><a class="nav-link" href="favoritos.html">Favoritos</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item">
+              <button class="nav-link nav-user-button js-login-trigger" type="button" data-bs-toggle="modal" data-bs-target="#loginModal" aria-label="Iniciar sesion">
+                <i class="bi bi-person-circle" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero--home">
+      <div class="hero__media" role="img" aria-label="Salar de Uyuni durante el atardecer"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content reveal-up">
+        <span class="section-kicker">Experiencias autenticas</span>
+        <h1 class="hero__title">Bolivia se descubre con calma, altura y asombro.</h1>
+        <p class="hero__text">Rutas editoriales por salares infinitos, lagunas de colores, ciudades historicas y selvas llenas de vida.</p>
+        <div class="hero__actions">
+          <a href="destinos.html" class="btn btn-brand">Explorar destinos</a>
+          <a href="#destacados" class="btn btn-glass">Ver destacados</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft" id="destacados">
+      <div class="container">
+        <div class="section__header">
+          <span class="section-kicker">Seleccion premium</span>
+          <h2 class="section__title">Destinos destacados</h2>
+          <p class="section__lead">Una primera mirada a los lugares que hacen de Bolivia una experiencia visual, cultural y natural inolvidable.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="destination-card">
+              <img class="destination-card__image" src="https://images.unsplash.com/photo-1547234935-80c7145ec969?auto=format&fit=crop&w=900&q=80" alt="Salar de Uyuni">
+              <div class="destination-card__body">
+                <div class="destination-card__header">
+                  <h3 class="destination-card__title">Salar de Uyuni</h3>
+                  <button class="btn-icon js-favorite" type="button" data-destination-id="salar-uyuni" data-destination-name="Salar de Uyuni" aria-label="Agregar Salar de Uyuni a favoritos" aria-pressed="false">
+                    <i class="bi bi-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <p class="destination-card__location">Altiplano de Potosi, a 3.656 msnm</p>
+                <p class="destination-card__text">Un horizonte blanco, cielos espejo y noches estrelladas en una de las postales mas potentes del continente.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="destination-card">
+              <img class="destination-card__image" src="https://images.unsplash.com/photo-1580619305218-8423a7ef79b4?auto=format&fit=crop&w=900&q=80" alt="Lago Titicaca">
+              <div class="destination-card__body">
+                <div class="destination-card__header">
+                  <h3 class="destination-card__title">Lago Titicaca</h3>
+                  <button class="btn-icon js-favorite" type="button" data-destination-id="lago-titicaca" data-destination-name="Lago Titicaca" aria-label="Agregar Lago Titicaca a favoritos" aria-pressed="false">
+                    <i class="bi bi-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <p class="destination-card__location">Cordillera de los Andes, frontera Peru-Bolivia</p>
+                <p class="destination-card__text">Islas, comunidades vivas y aguas profundas para conectar con la historia andina desde la orilla.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <article class="destination-card">
+              <img class="destination-card__image" src="https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?auto=format&fit=crop&w=900&q=80" alt="Cristo de la Concordia">
+              <div class="destination-card__body">
+                <div class="destination-card__header">
+                  <h3 class="destination-card__title">Cristo de la Concordia</h3>
+                  <button class="btn-icon js-favorite" type="button" data-destination-id="cristo-concordia" data-destination-name="Cristo de la Concordia" aria-label="Agregar Cristo de la Concordia a favoritos" aria-pressed="false">
+                    <i class="bi bi-heart" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <p class="destination-card__location">Cochabamba, Bolivia</p>
+                <p class="destination-card__text">Un mirador monumental sobre el valle cochabambino, ideal para contemplar la ciudad desde las alturas.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="info-band">
+          <div class="info-band__content">
+            <span class="section-kicker">Viajar mejor</span>
+            <h2 class="section__title">Rutas pensadas para sentir el destino, no solo visitarlo.</h2>
+            <p class="section__lead">Destino Bolivia organiza la informacion visual y turistica con una arquitectura lista para filtros, favoritos, comentarios y reservas futuras.</p>
+          </div>
+          <div class="info-band__stats">
+            <div class="stat-item">
+              <strong>9</strong>
+              <span>Departamentos</span>
+            </div>
+            <div class="stat-item">
+              <strong>3</strong>
+              <span>Ecosistemas</span>
+            </div>
+            <div class="stat-item">
+              <strong>+40</strong>
+              <span>Experiencias</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery">
+      <div class="container">
+        <div class="section__header">
+          <span class="section-kicker">Galeria</span>
+          <h2 class="section__title">Texturas de Bolivia</h2>
+        </div>
+        <div class="gallery-grid">
+          <img class="gallery-grid__item gallery-grid__item--tall" src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" alt="Mercado andino colorido">
+          <img class="gallery-grid__item" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Paisaje natural turistico">
+          <img class="gallery-grid__item" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80" alt="Montanas y ruta escenica">
+          <img class="gallery-grid__item gallery-grid__item--wide" src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=1000&q=80" alt="Viaje en carretera panoramica">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="loginModalLabel">Iniciar Sesión</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <form class="modal-body">
+          <div class="mb-3">
+            <label class="form-label" for="loginUserIndex">Nombre de usuario</label>
+            <input class="form-control" type="text" id="loginUserIndex" name="usuario" autocomplete="username" required>
+          </div>
+          <div>
+            <label class="form-label" for="loginPasswordIndex">Contraseña</label>
+            <input class="form-control" type="password" id="loginPasswordIndex" name="password" autocomplete="current-password" required>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-brand" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-brand" data-bs-dismiss="modal">Ingresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a class="site-footer__brand" href="index.html">Destino Bolivia</a>
+          <p>Turismo moderno, cultural y natural para explorar Bolivia con una mirada premium.</p>
+        </div>
+        <div>
+          <h3>Navegacion</h3>
+          <a href="destinos.html">Destinos</a>
+          <a href="favoritos.html">Favoritos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <p>Cochabamba, Bolivia<br>hola@destinobolivia.bo</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 Destino Bolivia</span>
+        <span>By: Daniela Espinel</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/favoritos.js"></script>
+</body>
+</html>

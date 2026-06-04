@@ -1,0 +1,75 @@
+.btn,
+.destination-card,
+.destination-card__image,
+.gallery-grid__item,
+.site-nav .nav-link,
+.js-favorite,
+.js-remove-favorite {
+  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease, border-color 220ms ease, opacity 220ms ease;
+}
+
+.destination-card--interactive:hover,
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 52px rgba(2, 59, 91, 0.18);
+}
+
+.destination-card:hover .destination-card__image {
+  transform: scale(1.035);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.js-favorite:hover,
+.js-remove-favorite:hover {
+  transform: scale(1.12);
+}
+
+.js-favorite.is-active {
+  animation: heartBeat 400ms ease;
+}
+
+@keyframes heartBeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.gallery-grid__item:hover {
+  transform: translateY(-4px);
+}
+
+.reveal-up {
+  animation: revealUp 760ms ease both;
+}
+
+@keyframes revealUp {
+  from {
+    transform: translateY(22px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
