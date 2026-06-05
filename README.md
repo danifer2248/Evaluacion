@@ -35,3 +35,6 @@ El proyecto está organizado de forma modular, separando la maquetación, los es
     ├── favoritos.js           # Gestión, persistencia y renderizado de la lista de favoritos
     ├── comentarios.js         # Lógica, validación y sanitización del sistema de reseñas
     └── formulario.js          # Control y validación del formulario de contacto general
+
+    Daniela Fernanda Espinel Chalco
+    cbbe.danielafernanda.espinel.ch@unifranz.edu.bo
